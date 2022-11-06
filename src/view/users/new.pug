@@ -1,0 +1,14 @@
+extends ./../layout/main
+
+block content
+    form(action="/users", method="post")
+        div()
+            input(type="text", name="name", placeholder="nome")
+        div()
+            input(type="text", name="username", placeholder="usuario")
+        div()
+            input(type="email", name="email", placeholder="email")
+        div()
+            input(type="password", name="password", placeholder="senha")
+        div()
+            button(type="submit") Criar
